@@ -1,7 +1,7 @@
 # Wombly
  Wellness app for Women
 
- Tech stack used- Express, React, Tailwind CSS, HTML, Openn AI API.
+ Tech stack used- Express, React, Tailwind CSS, HTML, Open AI API.
 
  To run the app, make sure you have node.js installed.
 
