@@ -1,27 +1,42 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+// QuestionList.js
+import React, { useState } from 'react';
 
-function CycleList() {
-  const [cycles, setCycles] = useState([]);
+const QuestionList = ({ questions, onAddResponse }) => {
+  const [responseText, setResponseText] = useState('');
 
-  useEffect(() => {
-    const fetchCycles = async () => {
-      const response = await axios.get('http://localhost:5000/cycles');
-      setCycles(response.data);
-    };
-    fetchCycles();
-  }, []);
+  const handleResponseSubmit = (index) => {
+    onAddResponse(index, responseText);
+    setResponseText('');
+  };
 
   return (
     <div>
-      <h2 className="text-lg font-semibold mb-3">Cycle History</h2>
-      <ul className="list-disc pl-5">
-        {cycles.map((cycle) => (
-          <li key={cycle.id} className="mb-1">{cycle.date}</li>
-        ))}
-      </ul>
+      {questions.map((question, index) => (
+        <div key={index} className="bg-gray-100 p-4 rounded-md mb-4">
+          <h3 className="text-lg font-semibold mb-2">{question.question}</h3>
+          <ul className="list-disc pl-6">
+            {question.responses.map((response, idx) => (
+              <li key={idx}>{response.user}: {response.response}</li>
+            ))}
+          </ul>
+          <div className="mt-4">
+            <input
+              type="text"
+              value={responseText}
+              onChange={(e) => setResponseText(e.target.value)}
+              className="w-full p-2 border rounded-md"
+            />
+            <button
+              onClick={() => handleResponseSubmit(index)}
+              className="mt-2 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+            >
+              Submit Response
+            </button>
+          </div>
+        </div>
+      ))}
     </div>
   );
-}
+};
 
-export default CycleList;
+export default QuestionList;
