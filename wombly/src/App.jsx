@@ -7,6 +7,7 @@ import Homepage from './components/HomePage';
 import OvulationTracker from './components/OvulationTracker'
 import PeriodTracker from './components/PeriodTracker';
 import PregnancyTracker from './components/PregnancyTracker';
+import Mentor from './components/Mentor';
 
 
 function App() {
@@ -23,8 +24,8 @@ function App() {
                         <Route  path="pregnancy" element={<PregnancyTracker />} />
                         <Route  path="period" element={<PeriodTracker />} />
                         {/* <Route  path="womb-gpt" element={<WombGPT />} />
-                        <Route  path="community" element={<Community />} />
-                        <Route  path="mentor-contact" element={<MentorContact />} /> */}
+                        <Route  path="community" element={<Community />} />*/}
+                        <Route  path="mentor-contact" element={<Mentor />} /> 
 
                         <Route  path="/*" element={<Homepage />} />
                   </Routes>

@@ -4,7 +4,7 @@
 // const Homepage = () => {
 //   return (
 //     <div>
-     
+
 
 //       <main className="container mx-auto mt-8">
 //         <section className="mb-8">
@@ -61,7 +61,7 @@
 //         </section>
 //       </main>
 
-     
+
 //     </div>
 //   );
 // };
@@ -78,16 +78,16 @@ import { FiCalendar, FiHeart, FiMessageCircle } from 'react-icons/fi'; // Import
 const Homepage = () => {
   return (
     <div>
-     
 
-      <main className="container mx-auto mt-8">
+
+      <main className=" ">
         {/* Full-length image */}
         <div className="mb-8">
-          <img src="https://via.placeholder.com/1200x400" alt="Banner" className="w-full h-auto" />
+          <img src="src\assets\banner.jpg" alt="Banner" className="w-full h-96 object-cover" />
         </div>
 
         {/* About Us Section */}
-        <section className="mb-8">
+        <section className="mb-8 p-5 text-center">
           <h2 className="text-3xl font-bold mb-4">About Us</h2>
           <p className="text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies velit vel eleifend. Vivamus at ullamcorper justo. Fusce condimentum accumsan magna.
@@ -96,8 +96,8 @@ const Homepage = () => {
 
         {/* Key Features Section */}
         <section className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">Key Features</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <h2 className="text-3xl font-bold mb-4 pl-8">Key Features</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
             {/* Feature Cards */}
             <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg">
               <FiCalendar className="text-4xl text-pink-500 mb-4" />
@@ -131,30 +131,33 @@ const Homepage = () => {
           </div>
         </section>
 
-        {/* Get in Touch Section */}
-        <section className="mb-8 bg-pink-100 p-8 rounded-lg">
-          <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-          <p className="text-gray-700 mb-4">
-            Have questions? Chat with our doctor mentor or use our chatbot for instant answers.
-          </p>
-          <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
-            Chat with Doctor
-          </button>
-        </section>
 
-        {/* Chatbot Section */}
-        <section className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">Chat with Our Bot</h2>
-          <p className="text-gray-700 mb-4">
-            Need quick answers? Chat with our AI-powered bot for instant solutions.
-          </p>
-          <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
-            Chat with Bot
-          </button>
-        </section>
+        <div className='flex'>
+          {/* Get in Touch Section */}
+          <section className="mb-8 bg-pink-100 px-8 py-4 rounded-lg">
+            <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
+            <p className="text-gray-700 mb-4">
+              Have questions? Chat with our doctor mentor or use our chatbot for instant answers.
+            </p>
+            <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
+              Chat with Doctor
+            </button>
+          </section>
+
+          {/* Chatbot Section */}
+          <section className="mb-8 pl-8 py-4">
+            <h2 className="text-3xl font-bold mb-4">Chat with Our Bot</h2>
+            <p className="text-gray-700 mb-4">
+              Need quick answers? Chat with our AI-powered bot for instant solutions.
+            </p>
+            <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
+              Chat with Bot
+            </button>
+          </section>
+        </div>
       </main>
 
-      
+
     </div>
   );
 };

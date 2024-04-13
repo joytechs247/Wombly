@@ -6,9 +6,9 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-xl font-bold">Women's Health Wellness</h1>
         <nav>
-          <a href="#" className="ml-4 hover:underline">About</a>
-          <a href="#" className="ml-4 hover:underline">Features</a>
-          <a href="#" className="ml-4 hover:underline">Contact</a>
+          <a href="/ovulation" className="ml-4 hover:underline">Ovulation Tracker</a>
+          <a href="/period" className="ml-4 hover:underline">Period Tracker</a>
+          <a href="/pregnancy" className="ml-4 hover:underline">Pregnancy Tracker</a>
         </nav>
       </div>
     </header>

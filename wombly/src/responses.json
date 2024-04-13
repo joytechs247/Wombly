@@ -1,0 +1,17 @@
+{
+    "greetings": [
+      "Hello!",
+      "Hi there!",
+      "Hey!"
+    ],
+    "farewells": [
+      "Goodbye!",
+      "See you later!",
+      "Bye!"
+    ],
+    "default": [
+      "I'm sorry, I don't understand that.",
+      "Could you please rephrase that?"
+    ]
+  }
+  
