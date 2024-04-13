@@ -31,7 +31,7 @@ const Mentor = () => {
   return (
     <div className="max-w-md mx-auto p-6 bg-pink-50 rounded-lg shadow-lg mt-5">
       <div className="mb-4 text-center">
-        <img src="/path/to/image.jpg" alt="Upload" className="mx-auto mb-4 rounded-full" style={{ width: 100, height: 100 }} />
+        <img src="src\assets\wombly_logo.png" alt="Upload" className="mx-auto mb-4 rounded-full " />
       </div>
 
       {submitted ? (

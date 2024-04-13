@@ -1,8 +1,8 @@
 {
     "greetings": [
-      "Hello!",
-      "Hi there!",
-      "Hey!"
+      "Hello,  how can i help you?",
+      "Hi there.  how can i help you?!",
+      "Hey. how can i help you?"
     ],
     "farewells": [
       "Goodbye!",
@@ -10,8 +10,8 @@
       "Bye!"
     ],
     "default": [
-      "I'm sorry, I don't understand that.",
-      "Could you please rephrase that?"
+      "no it is completely normal however in case of irregularities you should contact your nearest medical assistance."
+      
     ]
   }
   

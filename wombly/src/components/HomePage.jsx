@@ -1,79 +1,10 @@
-// import React from 'react';
-
-
-// const Homepage = () => {
-//   return (
-//     <div>
-
-
-//       <main className="container mx-auto mt-8">
-//         <section className="mb-8">
-//           <h2 className="text-3xl font-bold mb-4">About Us</h2>
-//           <p className="text-gray-700">
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-//             ultricies velit vel eleifend. Vivamus at ullamcorper justo. 
-//             Fusce condimentum accumsan magna.
-//           </p>
-//         </section>
-
-//         <section className="mb-8">
-//           <h2 className="text-3xl font-bold mb-4">Key Features</h2>
-//           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-//             {/* Feature Cards */}
-//             <div className="bg-white p-4 rounded-lg shadow-md">
-//               <h3 className="text-xl font-bold mb-2">Ovulation Tracker</h3>
-//               <p>Track your ovulation cycle with ease.</p>
-//             </div>
-//             <div className="bg-white p-4 rounded-lg shadow-md">
-//               <h3 className="text-xl font-bold mb-2">Period Tracker</h3>
-//               <p>Monitor and predict your menstrual period.</p>
-//             </div>
-//             <div className="bg-white p-4 rounded-lg shadow-md">
-//               <h3 className="text-xl font-bold mb-2">Pregnancy Tracker</h3>
-//               <p>Follow your pregnancy journey week by week.</p>
-//             </div>
-//           </div>
-//         </section>
-
-//         <section className="mb-8">
-//           <h2 className="text-3xl font-bold mb-4">Community</h2>
-//           <p className="text-gray-700 mb-4">
-//             Join our community to chat anonymously and connect with others.
-//           </p>
-//           <div className="flex justify-center">
-//             <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
-//               Join Chat
-//             </button>
-//           </div>
-//         </section>
-
-//         <section>
-//           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-//           <p className="text-gray-700">
-//             Have questions? Chat with our doctor mentor or use our chatbot for
-//             instant answers.
-//           </p>
-//           <div className="flex justify-center mt-4">
-//             <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
-//               Chat Now
-//             </button>
-//           </div>
-//         </section>
-//       </main>
-
-
-//     </div>
-//   );
-// };
-
-// export default Homepage;
 
 
 
 import React from 'react';
 
 import { FiCalendar, FiHeart, FiMessageCircle } from 'react-icons/fi'; // Import icons
-// import communityImage from './community.jpg'; // Import community image
+// import communityImage from 'src/assets/community.jpg'; // Import community image
 
 const Homepage = () => {
   return (
@@ -87,11 +18,27 @@ const Homepage = () => {
         </div>
 
         {/* About Us Section */}
-        <section className="mb-8 p-5 text-center">
-          <h2 className="text-3xl font-bold mb-4">About Us</h2>
-          <p className="text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies velit vel eleifend. Vivamus at ullamcorper justo. Fusce condimentum accumsan magna.
-          </p>
+        <section className="mb-8 flex items-center">
+          <div id='about-section' className='flex  w-full h-full items-center justify-center' >
+            <div data-aos="fade-up">
+              <div className=" lg:grid grid-cols-2 w-full place-items-center justify-center">
+                <div className='  flex py-10 w-full h-full items-center justify-center'>
+                  <img src='src\assets\about.jpg' alt="Image"
+                    className="lg:h-96 lg:w-96  w-80 h-80 items-center justify-center" />
+                </div>
+
+                <div className=" ">
+                  <div className=" h-full w-full items-center justify-center  back">
+                    <h1 className="text-4xl font-bold mb-4 pt-2 text-black">ABOUT US</h1>
+                  </div>
+                  <h2 className="text-lg text-gray-900 lg:mr-10   px-2"> Welcome to Wombly, your trusted companion for women's health. We're here to empower you with accurate cycle tracking, ovulation monitoring, and pregnancy support. Our user-friendly app provides personalized insights and guidance, backed by a team of medical experts. Beyond tracking, Wombly fosters a supportive community where women can connect, share experiences, and find solidarity. Join us on Wombly and discover a world of empowerment, knowledge, and sisterhood. Together, we're revolutionizing women's health one cycle at a time.  </h2>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Key Features Section */}
@@ -119,15 +66,29 @@ const Homepage = () => {
 
         {/* Community Section */}
         <section className="mb-8 flex items-center">
-          {/* <img src={communityImage} alt="Community" className="w-1/2 rounded-l-lg" /> */}
-          <div className="bg-pink-100 p-8 rounded-r-lg">
-            <h2 className="text-3xl font-bold mb-4">Community</h2>
-            <p className="text-gray-700">
-              Join our community to chat anonymously and connect with others.
-            </p>
-            <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-4">
-              Join Chat
-            </button>
+          <div id='about-section' className='flex lg:pt-24 w-full h-full items-center justify-center' >
+            <div data-aos="fade-up">
+              <div className=" lg:grid grid-cols-2 w-full place-items-center justify-center">
+                <div className='  flex py-10 w-full h-full items-center justify-center'>
+                  <img src='src\assets\community.jpg' alt="Image"
+                    className="lg:h-96 lg:w-96  w-80 h-80 items-center justify-center" />
+                </div>
+
+                <div className=" ">
+                  <div className=" h-full w-full items-center justify-center  back">
+                    <h1 className="text-4xl font-bold mb-4 pt-2 text-black">JOIN OUR COMMUNITY!</h1>
+                  </div>
+                  <h2 className="text-lg text-gray-900 lg:mr-10   px-2"> Join a community of like-minded empowering women and ask your questions without any hesitation on our anonymous chat Forum, so that no one comes between you and your concerns!  </h2>
+
+                  <a href="/community">
+                    <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded mt-4 items-center justify-center text-center">
+                      Join Chat
+                    </button>
+                  </a>
+
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -139,9 +100,11 @@ const Homepage = () => {
             <p className="text-gray-700 mb-4">
               Have questions? Chat with our doctor mentor or use our chatbot for instant answers.
             </p>
-            <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
-              Chat with Doctor
-            </button>
+            <a href="/mentor-contact">
+              <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
+                Chat with Doctor
+              </button>
+            </a>
           </section>
 
           {/* Chatbot Section */}
@@ -150,9 +113,11 @@ const Homepage = () => {
             <p className="text-gray-700 mb-4">
               Need quick answers? Chat with our AI-powered bot for instant solutions.
             </p>
-            <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
-              Chat with Bot
-            </button>
+            <a href="/womb-gpt">
+              <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded">
+                Chat with Bot
+              </button>
+            </a>
           </section>
         </div>
       </main>
