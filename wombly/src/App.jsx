@@ -8,6 +8,8 @@ import OvulationTracker from './components/OvulationTracker'
 import PeriodTracker from './components/PeriodTracker';
 import PregnancyTracker from './components/PregnancyTracker';
 import Mentor from './components/Mentor';
+import Forum from './Forum';
+import Chatbot from './Chatbot';
 
 
 function App() {
@@ -23,8 +25,8 @@ function App() {
                         <Route  path="ovulation" element={<OvulationTracker />} />
                         <Route  path="pregnancy" element={<PregnancyTracker />} />
                         <Route  path="period" element={<PeriodTracker />} />
-                        {/* <Route  path="womb-gpt" element={<WombGPT />} />
-                        <Route  path="community" element={<Community />} />*/}
+                        <Route  path="womb-gpt" element={<Chatbot />} />
+                        <Route  path="community" element={<Forum />} />
                         <Route  path="mentor-contact" element={<Mentor />} /> 
 
                         <Route  path="/*" element={<Homepage />} />

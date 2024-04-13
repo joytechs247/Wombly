@@ -44,7 +44,7 @@ const Forum = () => {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-3xl font-bold text-center mb-8">Anonymous Question Forum</h1>
+      <h1 className="text-3xl font-bold text-center mb-8 pt-5">Anonymous Question Forum</h1>
       <QuestionForm onSubmit={handleSubmitQuestion} />
       <QuestionList questions={questions} onAddResponse={handleAddResponse} />
     </div>
