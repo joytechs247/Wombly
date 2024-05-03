@@ -7,6 +7,6 @@
 
  go to wombly directory and run npm install
 
-after nonde modules are installed, runn npm run dev
+after node modules are installed, run npm run dev
 
 you ll need open ai api key for the bot to work.
